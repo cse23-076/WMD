@@ -8,14 +8,14 @@
 /* Body styles */
 body {
     font-family: 'Roboto', sans-serif; /* Changed font */
-    background-color: #f8f9fa; /* Updated background color */
-    color: #555;
+    background-color: #000; /* Updated background color to black */
+    color: #fff; /* Updated text color to white */
     line-height: 1.6;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #343a40; /* Darker navigation background */
+    background-color: #1a1a1a; /* Darker navigation background */
     padding: 20px 0;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 /* Feedback form styles */
 .feedback-form {
-    background-color: #fff;
+    background-color: #333; /* Updated background color */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -100,6 +100,8 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #555; /* Updated input background color */
+    color: #fff; /* Updated input text color */
 }
 
 .feedback-form textarea {
@@ -122,13 +124,14 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background-color: #343a40; /* Darker footer background */
+    background-color: #1a1a1a; /* Darker footer background */
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
 }
+
 /* Past Feedback Section Styles */
 .past-feedback {
     overflow: hidden; /* Hide overflow to prevent scrolling */
@@ -142,7 +145,7 @@ footer {
 
 .feedback-card {
     display: inline-block; /* Display cards inline */
-    background-color: #f9f9f9;
+    background-color: #444; /* Updated card background color */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -173,4 +176,3 @@ footer {
 .feedback-card cite:before {
     content: "- ";
 }
-
