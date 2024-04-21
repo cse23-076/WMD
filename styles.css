@@ -129,3 +129,48 @@ footer {
     margin-top: 20px;
     border-radius: 10px;
 }
+/* Past Feedback Section Styles */
+.past-feedback {
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    margin-bottom: 40px; /* Add margin to separate from other sections */
+}
+
+.feedback-container {
+    width: 100%; /* Set container width to 100% */
+}
+
+.feedback-card {
+    display: inline-block; /* Display cards inline */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px; /* Add margin between cards */
+}
+
+.feedback-card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+
+.feedback-card p {
+    margin-bottom: 10px;
+}
+
+.feedback-card blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.feedback-card cite {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.feedback-card cite:before {
+    content: "- ";
+}
+
