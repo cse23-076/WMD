@@ -81,7 +81,7 @@ nav ul li a:hover {
 
 /* Feedback form styles */
 .feedback-form {
-    background-color: #333; /* Updated background color */
+    background-color: #f8f8f8; /* Lighter background color */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -91,6 +91,7 @@ nav ul li a:hover {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #333; /* Text color */
 }
 
 .feedback-form input[type="text"],
@@ -102,8 +103,8 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: #555; /* Updated input background color */
-    color: #fff; /* Updated input text color */
+    background-color: #fff; /* Lighter input background color */
+    color: #333; /* Text color */
 }
 
 .feedback-form textarea {
@@ -123,6 +124,7 @@ nav ul li a:hover {
 .feedback-form button:hover {
     background-color: #0056b3; /* Darker hover color */
 }
+
 
 /* Footer styles */
 footer {
@@ -147,7 +149,7 @@ footer {
 
 .feedback-card {
     display: inline-block; /* Display cards inline */
-    background-color: #444; /* Updated card background color */
+    background-color: #f8f8f8; /* Lighter card background color */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -160,6 +162,7 @@ footer {
 
 .feedback-card p {
     margin-bottom: 10px;
+    color: #333; /* Text color */
 }
 
 .feedback-card blockquote {
@@ -168,11 +171,13 @@ footer {
     font-size: 18px;
     font-style: italic;
     margin-top: 10px;
+    color: #555; /* Quote text color */
 }
 
 .feedback-card cite {
     font-style: normal;
     font-weight: bold;
+    color: #777; /* Cite text color */
 }
 
 .feedback-card cite:before {
