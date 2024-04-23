@@ -17,6 +17,7 @@ body {
 nav {
     background-color: #1a1a1a; /* Darker navigation background */
     padding: 20px 0;
+    margin-top: 90px;
 }
 
 nav ul {
@@ -175,4 +176,11 @@ footer {
 
 .feedback-card cite:before {
     content: "- ";
+}
+#logo {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
