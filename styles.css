@@ -8,8 +8,8 @@
 /* Body styles */
 body {
     font-family: 'Roboto', sans-serif; /* Changed font */
-    background-color: #000; /* Updated background color to black */
-    color: #fff; /* Updated text color to white */
+    background-color: #fff; /* Updated background color to white */
+    color: #000; /* Updated text color to black */
     line-height: 1.6;
 }
 
@@ -178,6 +178,7 @@ footer {
 .feedback-card cite:before {
     content: "- ";
 }
+
 #logo {
     position: absolute;
     top: 1px; /* Adjust as needed */
@@ -185,6 +186,7 @@ footer {
     width: 80px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
 /* Game and app page styles */
 .page {
     background-color: #f9f9f9;
