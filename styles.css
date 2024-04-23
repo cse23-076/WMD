@@ -71,6 +71,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+    filter: grayscale(100%);
 }
 
 .movie:hover {
@@ -211,6 +212,7 @@ footer {
     height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
+    filter: grayscale(100%);
 }
 
 .page a {
