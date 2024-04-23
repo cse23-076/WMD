@@ -179,8 +179,8 @@ footer {
 }
 #logo {
     position: absolute;
-    top: 10px; /* Adjust as needed */
+    top: 1px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
-    width: 100px; /* Adjust the width as needed */
+    width: 80px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
