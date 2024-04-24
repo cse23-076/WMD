@@ -234,3 +234,22 @@ footer {
 .page a:hover {
     background-color: #0056b3;
 }
+/* Welcome section styles */
+.welcome-section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: #333; /* Dark gray heading color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    color: #666; /* Medium gray paragraph color */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
