@@ -59,6 +59,7 @@ nav ul li a:hover {
 .movie {
     display: inline-block;
     margin-bottom: 20px;
+     margin-right: 10px;
     width: 200px;
     height: 300px;
     overflow: hidden;
