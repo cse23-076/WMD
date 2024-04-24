@@ -253,4 +253,20 @@ footer {
     font-size: 18px;
     line-height: 1.6;
 }
+.collectionm {
+    display: inline-block;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collectionm img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.collectionm:hover {
+    transform: scale(1.05);
+}
 
