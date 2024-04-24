@@ -1,0 +1,46 @@
+//*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Small Image Link</title>
+    
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <footer>
+        <h3>Website made by Theo</h3>
+        <h3>2024 adsdas asd</h3>
+        <!-- Image links -->
+        <a href="https://facebook.com">
+            <img src="https://th.bing.com/th/id/OIP.ZsUQ2OMgjKhgnc9VjnWcfgHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Facebook">
+        </a>
+        <a href="https://facebook.com">
+            <img src="https://th.bing.com/th/id/OIP.ZsUQ2OMgjKhgnc9VjnWcfgHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Facebook">
+        </a>
+        <a href="https://facebook.com">
+            <img src="https://th.bing.com/th/id/OIP.ZsUQ2OMgjKhgnc9VjnWcfgHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Facebook">
+        </a>
+    </footer>
+</body>
+</html>
+
+ footer {
+            background-color: #1a1a1a; /* Darker footer background */
+            color: #fff;
+            text-align: center;
+            padding: 5px; /* Reduced padding */
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        /* Styling for the image links */
+        footer a {
+            margin: 5px; /* Add space between images */
+        }
+        footer img {
+            width: 20px; /* Adjust the width as needed */
+            height: auto;
+            opacity: 0.7; /* Adjust opacity to blend with background */
+        }
+
