@@ -258,13 +258,13 @@ footer {
     margin: 20px;
     transition: transform 0.3s ease-in-out;
     width: 200px; /* Set width to the desired size */
-    height: 200px; /* Fixed height for uniformity */
+    height: 250px; /* Increase the height for larger images */
     overflow: hidden; /* Hide any overflow */
 }
 
 .collectionm img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Let the height adjust automatically based on the width */
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
