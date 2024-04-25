@@ -258,7 +258,8 @@ footer {
     margin: 20px;
     transition: transform 0.3s ease-in-out;
     width: 200px; /* Set width to the desired size */
-    height: auto; /* Let the height adjust proportionally */
+    height: 200px; /* Fixed height for uniformity */
+    overflow: hidden; /* Hide any overflow */
 }
 
 .collectionm img {
@@ -271,4 +272,3 @@ footer {
 .collectionm:hover {
     transform: scale(1.05);
 }
-
