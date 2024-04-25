@@ -253,22 +253,26 @@ footer {
     font-size: 18px;
     line-height: 1.6;
 }
-.collectionm {
+.collectionm  {
     display: inline-block;
-    margin: 20px;
-    transition: transform 0.3s ease-in-out;
-    width: 200px; /* Set width to the desired size */
-    height: 250px; /* Increase the height for larger images */
-    overflow: hidden; /* Hide any overflow */
+    margin-bottom: 20px;
+     margin-right: 20px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.collectionm img {
+.collectionm  img {
     width: 100%;
-    height: auto; /* Let the height adjust automatically based on the width */
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
-.collectionm:hover {
-    transform: scale(1.05);
+.collection:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
