@@ -278,6 +278,7 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 /* Add this CSS to your existing styles.css file or create a new one */
+/* Hamburger menu styles */
 .hamburger {
     display: none;
     flex-direction: column;
