@@ -14,17 +14,6 @@ body {
     line-height: 1.6;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-/* Styles for screens with a minimum width of 601px */
-@media screen and (min-width: 601px) {
-    body {
-        font-size: 16px;
-    }
 
 /* Navigation styles */
 nav {
@@ -287,4 +276,61 @@ footer {
 .collection:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Add this CSS to your existing styles.css file or create a new one */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
