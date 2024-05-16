@@ -1,117 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Entertainment Destination</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="Untitled.png" alt="Your Logo" id="logo" height="50">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="movie.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv-shows.html">TV Shows</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="games-apps.html">Games/Apps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="collection.html">Collection</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="feedback.html">Feedback</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <img src="Untitled.png" alt="Your Logo"  id="logo">
     </header>
 
-    <section class="welcome-section">
-        <div class="container">
-            <h1>Welcome to the Ultimate Entertainment Destination!</h1>
-            <p>Dive into an unparalleled cinematic experience right here. Whether you're searching for your next binge-worthy series or that perfect film for movie night, we've got you covered. Our dedicated team extends a warm welcome and thanks you for stopping by. Sit back, relax, and enjoy the journey through our world of entertainment!</p>
-        </div>
-    </section>
-
-    <section class="news-section">
-        <div class="container">
-            <h2>News & Updates</h2>
-            <ul>
-                <li>Now streaming: blockbuster movies and hit TV shows!</li>
-                <li>Join our community and participate in exclusive events.</li>
-                <li>Get ready for our upcoming gaming tournaments.</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Your Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="movie.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv-shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games-apps.html">Games/Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collection.html">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About us</a>
+                </li>
             </ul>
         </div>
+    </nav>
+
+    <section class="welcome-section">
+        <h1>Welcome to the Ultimate Entertainment Destination!</h1>
+        <p>Dive into an unparalleled cinematic experience right here. Whether you're searching for your next binge-worthy series or that perfect film for movie night, we've got you covered. Our dedicated team extends a warm welcome and thanks you for stopping by. Sit back, relax, and enjoy the journey through our world of entertainment!</p>
+    </section>
+    <section class="news-section">
+        <h2>News & Updates</h2>
+        <ul>
+            <li>Now streaming: blockbuster movies and hit TV shows!</li>
+            <li>Join our community and participate in exclusive events.</li>
+            <li>Get ready for our upcoming gaming tournaments.</li>
+        </ul>
     </section>
 
-   <div class="container">
-    <h2>Top 5 Movies</h2>
-    <div id="movieCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="annette.jpg" alt="Movie 1" class="d-block w-100">
-            </div>
-            <!-- Repeat for other movies -->
+    <div class="container">
+     <h2>Top 5 Movies</h2>
+        <div class="movie">
+               <a href = "https://youtu.be/l_EaNpL16SU?si=hWKioCeNowaf9VJF" target = "_blank">
+            <img src="annette.jpg" alt="Movie 1">
+               </a>
         </div>
-        <a class="carousel-control-prev" href="#movieCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#movieCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="movie">
+            <img src="batman.png" alt="Movie 2">
+        </div>
+        <div class="movie">
+            <img src="moana.jpeg" alt="Movie 3">
+        </div>
+        <div class="movie">
+            <img src="shazam.jpeg" alt="Movie 4">
+        </div>
+        <div class="movie">
+            <img src="titanic.jpeg" alt="Movie 5">
+        </div>
+
+        <h2>Top 5 TV Shows</h2>
+        <div class="movie">
+            <img src="theflash.webp" alt="TV Show 1">
+        </div>
+        <div class="movie">
+            <img src="theoffice.jpg" alt="TV Show 2">
+        </div>
+        <div class="movie">
+            <img src="gotham.jpeg" alt="TV Show 3">
+        </div>
+        <div class="movie">
+            <img src="friends.jpeg" alt="TV Show 4">
+        </div>
+        <div class="movie">
+            <img src="supernatural.jpg" alt="TV Show 5">
+        </div>
     </div>
 
-    <h2>Top 5 TV Shows</h2>
-    <div id="tvShowCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="theflash.webp" alt="TV Show 1" class="d-block w-100">
-            </div>
-            <!-- Repeat for other TV shows -->
-        </div>
-        <a class="carousel-control-prev" href="#tvShowCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#tvShowCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
 
-
-    <footer class="bg-dark text-white">
-        <div class="container">
-            <p>Website created by Theo Leburu</p>
-            <p>Social media</p>
-            <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube.png" alt="YouTube" style="width: 50px; height: 50px;"></a>
-            <a href="https://www.warnerbros.com/"><img src="whatsapp.png" alt="WhatsApp" style="width: 50px; height: 50px;"></a>
-            <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr"><img src="facebook.jpg" alt="Facebook" style="width: 50px; height: 50px;"></a>
-        </div>
+    <footer>
+        <p>Website created by Theo Leburu</p>
+        <p>Social media</p>
+        <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube.png" style="width: 50px; height: 50px;"></a>
+        <a href="https://www.warnerbros.com/"><img src="whatsapp.png" style="width: 50px; height: 50px;"></a>
+        <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr"><img src="facebook.jpg" style="width: 50px; height: 50px;"></a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
