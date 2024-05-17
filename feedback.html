@@ -79,8 +79,11 @@
 <script>
     function showFeedbackMessage() {
         alert("Feedback received. Thank you!");
+        document.getElementById("feedback").value = ""; // Clear the feedback textarea
+        return false; // Prevent form submission (page reload)
     }
 </script>
+
 <footer>
     <p>Website created by Theo Leburu</p>
     <p>Social media</p>
