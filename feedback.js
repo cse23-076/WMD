@@ -5,6 +5,8 @@ var feedbackForm = document.getElementById("feedbackForm");
 feedbackForm.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
     
+    console.log("Form submitted!"); // Check if this message appears in the console
+    
     // Display the modal
     showModal();
 });
