@@ -2,104 +2,91 @@
 <html>
 <head>
     <title>Feedback Form</title>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-       <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="Untitled.png" alt="Your Logo"  id="logo">
-      
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-        
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="movie.html">Movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tv-shows.html">TV Shows</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="games-apps.html">Games/Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="collection.html">Collection</a>
-                    </li>
-                  
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="container">
- <section class="past-feedback">
-    <h2>Past Feedback</h2>
-    <div class="feedback-card">
-        <p>Theo Leburu</p>
-        <blockquote>This website is the best.</blockquote>
-        
-    </div>
-    
-    <div class="feedback-card">
-        <p>Wes </p>
-        <blockquote>This is a very good website.</blockquote>
-        
-    </div>
-   
-   <div class="feedback-card">
-        <p>Katlego Hevean</p>
-        <blockquote>Lacks more tv shows and movies</blockquote>
-       
-    </div>
-    <!-- Add more feedback cards as needed -->
-</section>
+<header>
+    <img src="Untitled.png" alt="Your Logo" id="logo">
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movie.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tv-shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games-apps.html">Games/Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collection.html">Collection</a>
+                </li>
 
-        
-      <section class="feedback-form">
-    <h2>We'd Love to Hear from You!</h2>
-    <p>Share your thoughts, suggestions, or any issues you encountered with us. Your feedback helps us improve!</p>
-    <form id="feedbackForm" action="#" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="feedback">Your Feedback:</label>
-        <textarea id="feedback" name="feedback" rows="5" required></textarea>
-        
-        <button type="submit">Submit Feedback</button>
-    </form>
-</section>
-        
-    </main>
-    
-       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-<script src= "feedback.js"></script>
- 
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <section class="past-feedback">
+        <h2>Past Feedback</h2>
+        <div class="feedback-card">
+            <p>Theo Leburu</p>
+            <blockquote>This website is the best.</blockquote>
+        </div>
+        <div class="feedback-card">
+            <p>Wes</p>
+            <blockquote>This is a very good website.</blockquote>
+        </div>
+        <div class="feedback-card">
+            <p>Katlego Hevean</p>
+            <blockquote>Lacks more tv shows and movies</blockquote>
+        </div>
+        <!-- Add more feedback cards as needed -->
+    </section>
+    <section class="feedback-form">
+        <h2>We'd Love to Hear from You!</h2>
+        <p>Share your thoughts, suggestions, or any issues you encountered with us. Your feedback helps us improve!</p>
+        <form id="feedbackForm" action="#" method="post" onsubmit="showFeedbackMessage()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showFeedbackMessage() {
+        alert("Feedback received. Thank you!");
+    }
+</script>
+<footer>
+    <p>Website created by Theo Leburu</p>
+    <p>Social media</p>
+    <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube.png" style="width: 50px; height: 50px;"></a>
+    <a href="https://www.warnerbros.com/"><img src="whatsapp.png" style="width: 50px; height: 50px;"></a>
+    <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr"><img src="facebook.jpg" style="width: 50px; height: 50px;"></a>
+</footer>
 </body>
-      <footer>
-        <p>Website created by Theo Leburu</p>
-  <p> Social media </p>
-  <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube.png" style="width: 50px; height: 50px;"></a>
-   <a href="https://www.warnerbros.com/"><img src="whatsapp.png" style="width: 50px; height: 50px;"></a>
-   <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr"><img src="facebook.jpg" style="width: 50px; height: 50px;"></a>
-   
-    </footer>
 </html>
