@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Entertainment Destination</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="Untitled.png" alt="Your Logo"  id="logo">
+    <header class="container-fluid bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="Untitled.png" alt="Your Logo" id="logo">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="movie.html">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tv-shows.html">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games-apps.html">Games/Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collection.html">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #1a1a1a; padding: 20px 0; margin-top: 90px;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="list-style-type: none; text-align: center;">
-            <li class="nav-item active">
-                <a class="nav-link" href="movie.html" style="text-decoration: none; color: #fff; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">Movies</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tv-shows.html" style="text-decoration: none; color: #fff; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">TV Shows</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="games-apps.html" style="text-decoration: none; color: #fff; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">Games/Apps</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="collection.html" style="text-decoration: none; color: #fff; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">Collection</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="feedback.html" style="text-decoration: none; color: #fff; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">Feedback</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about-us.html" style="text-decoration: none; color: #fff; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">About us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-
-    </header>
- <section class="welcome-section">
+    <main class="container mt-5">
+        <section class="welcome-section text-center mb-5">
             <h1>Welcome to the Ultimate Entertainment Destination!</h1>
             <p>Dive into an unparalleled cinematic experience right here. Whether you're searching for your next binge-worthy series or that perfect film for movie night, we've got you covered. Our dedicated team extends a warm welcome and thanks you for stopping by. Sit back, relax, and enjoy the journey through our world of entertainment!</p>
         </section>
-        <section class="news-section">
+
+        <section class="news-section mb-5">
             <h2>News & Updates</h2>
             <ul>
                 <li>Now streaming: blockbuster movies and hit TV shows!</li>
@@ -53,56 +56,69 @@
             </ul>
         </section>
 
+        <section class="top-movies mb-5">
+            <h2>Top 5 Movies</h2>
+            <div class="row">
+                <div class="col-md-2 mb-3">
+                    <a href="https://youtu.be/l_EaNpL16SU?si=hWKioCeNowaf9VJF" target="_blank">
+                        <img src="annette.jpg" alt="Movie 1" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="batman.png" alt="Movie 2" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="moana.jpeg" alt="Movie 3" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="shazam.jpeg" alt="Movie 4" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="titanic.jpeg" alt="Movie 5" class="img-fluid">
+                </div>
+            </div>
+        </section>
 
-       </body>
-    
-      <div class="container">
-        <h2>Top 5 Movies</h2>
-        <div class="movie">
-               <a href = "https://youtu.be/l_EaNpL16SU?si=hWKioCeNowaf9VJF" target = "_blank">
-            <img src="annette.jpg" alt="Movie 1">
-               </a>
-        </div>
-        <div class="movie">
-            <img src="batman.png" alt="Movie 2">
-        </div>
-        <div class="movie">
-            <img src="moana.jpeg" alt="Movie 3">
-        </div>
-        <div class="movie">
-            <img src="shazam.jpeg" alt="Movie 4">
-        </div>
-        <div class="movie">
-            <img src="titanic.jpeg" alt="Movie 5">
-        </div>
+        <section class="top-tv-shows mb-5">
+            <h2>Top 5 TV Shows</h2>
+            <div class="row">
+                <div class="col-md-2 mb-3">
+                    <img src="theflash.webp" alt="TV Show 1" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="theoffice.jpg" alt="TV Show 2" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="gotham.jpeg" alt="TV Show 3" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="friends.jpeg" alt="TV Show 4" class="img-fluid">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img src="supernatural.jpg" alt="TV Show 5" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <h2>Top 5 TV Shows</h2>
-        <div class="movie">
-            <img src="theflash.webp" alt="TV Show 1">
-        </div>
-        <div class="movie">
-            <img src="theoffice.jpg" alt="TV Show 2">
-        </div>
-        <div class="movie">
-            <img src="gotham.jpeg" alt="TV Show 3">
-        </div>
-        <div class="movie">
-            <img src="friends.jpeg" alt="TV Show 4">
-        </div>
-        <div class="movie">
-            <img src="supernatural.jpg" alt="TV Show 5">
-        </div>
-    </div>
-   <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>Website created by Theo Leburu</p>
-  <p> Social media </p>
-  <a href="https://www.youtube.com/@WarnerBrosPictures"><img src="youtube.png" style="width: 50px; height: 50px;"></a>
-   <a href="https://www.warnerbros.com/"><img src="whatsapp.png" style="width: 50px; height: 50px;"></a>
-   <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr"><img src="facebook.jpg" style="width: 50px; height: 50px;"></a>
-   
+        <p>Social Media</p>
+        <div>
+            <a href="https://www.youtube.com/@WarnerBrosPictures" target="_blank">
+                <img src="youtube.png" alt="YouTube" class="social-icon">
+            </a>
+            <a href="https://www.warnerbros.com/" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr" target="_blank">
+                <img src="facebook.jpg" alt="Facebook" class="social-icon">
+            </a>
+        </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+</body>
 </html>
