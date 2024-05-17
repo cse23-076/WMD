@@ -298,16 +298,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
     .container, .feedback-form, .past-feedback, .page, .welcome-section, .collectionm {
         padding: 10px;
     }
-    
     .movie, .feedback-card, .collectionm {
         width: 100%;
         margin-right: 0;
     }
-    
     nav {
         margin-top: 50px;
     }
 }
+
