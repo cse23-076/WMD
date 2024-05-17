@@ -68,27 +68,31 @@
 
 
         
-        <section class="feedback-form">
-            <h2>We'd Love to Hear from You!</h2>
-            <p>Share your thoughts, suggestions, or any issues you encountered with us. Your feedback helps us improve!</p>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="feedback">Your Feedback:</label>
-                <textarea id="feedback" name="feedback" rows="5" required></textarea>
-                
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </section>
+        &lt;section class="feedback-form"&gt;
+    &lt;h2&gt;We'd Love to Hear from You!&lt;/h2&gt;
+    &lt;p&gt;Share your thoughts, suggestions, or any issues you encountered with us. Your feedback helps us improve!&lt;/p&gt;
+    &lt;form id="feedbackForm" action="#" method="post"&gt;
+        &lt;label for="name"&gt;Your Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;
+        
+        &lt;label for="email"&gt;Your Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+        
+        &lt;label for="feedback"&gt;Your Feedback:&lt;/label&gt;
+        &lt;textarea id="feedback" name="feedback" rows="5" required&gt;&lt;/textarea&gt;
+        
+        &lt;button type="submit"&gt;Submit Feedback&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;div id="feedbackMessage" style="display: none;"&gt;&lt;/div&gt; &lt;!-- Hidden initially --&gt;
+&lt;/section&gt;
+        
     </main>
     
        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+<script src= "feedback.js"></script>
  
 </body>
       <footer>
