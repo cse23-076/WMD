@@ -1,5 +1,4 @@
 /* Resetting default margin, padding, and box-sizing */
-/* Resetting default margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +7,17 @@
 
 /* Body styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Changed font */
-    background-color: #fff; /* Updated background color to white */
-    color: #000; /* Updated text color to black */
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #000;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-
 
 /* Navigation styles */
 nav {
-    background-color: #1a1a1a; /* Darker navigation background */
+    background-color: #1a1a1a;
     padding: 20px 0;
     margin-top: 90px;
 }
@@ -25,6 +25,7 @@ nav {
 nav ul {
     list-style-type: none;
     text-align: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -45,6 +46,13 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
 /* Container styles */
 .container {
     max-width: 1200px;
@@ -60,7 +68,7 @@ nav ul li a:hover {
 .movie {
     display: inline-block;
     margin-bottom: 20px;
-     margin-right: 20px;
+    margin-right: 20px;
     width: 200px;
     height: 300px;
     overflow: hidden;
@@ -81,9 +89,17 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+    .movie {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
 /* Feedback form styles */
 .feedback-form {
-    background-color: #f8f8f8; /* Lighter background color */
+    background-color: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -93,20 +109,20 @@ nav ul li a:hover {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #333; /* Text color */
+    color: #333;
 }
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: #fff; /* Lighter input background color */
-    color: #333; /* Text color */
+    background-color: #fff;
+    color: #333;
 }
 
 .feedback-form textarea {
@@ -114,7 +130,7 @@ nav ul li a:hover {
 }
 
 .feedback-form button {
-    background-color: #007bff; /* Updated button color */
+    background-color: #007bff;
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -124,13 +140,12 @@ nav ul li a:hover {
 }
 
 .feedback-form button:hover {
-    background-color: #0056b3; /* Darker hover color */
+    background-color: #0056b3;
 }
-
 
 /* Footer styles */
 footer {
-    background-color: #1a1a1a; /* Darker footer background */
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -140,31 +155,31 @@ footer {
 
 /* Past Feedback Section Styles */
 .past-feedback {
-    overflow: hidden; /* Hide overflow to prevent scrolling */
-    white-space: nowrap; /* Prevent wrapping */
-    margin-bottom: 40px; /* Add margin to separate from other sections */
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 40px;
 }
 
 .feedback-container {
-    width: 100%; /* Set container width to 100% */
+    width: 100%;
 }
 
 .feedback-card {
-    display: inline-block; /* Display cards inline */
-    background-color: #f8f8f8; /* Lighter card background color */
+    display: inline-block;
+    background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-right: 20px; /* Add margin between cards */
+    margin-right: 20px;
 }
 
 .feedback-card:last-child {
-    margin-right: 0; /* Remove margin from the last card */
+    margin-right: 0;
 }
 
 .feedback-card p {
     margin-bottom: 10px;
-    color: #333; /* Text color */
+    color: #333;
 }
 
 .feedback-card blockquote {
@@ -173,25 +188,26 @@ footer {
     font-size: 18px;
     font-style: italic;
     margin-top: 10px;
-    color: #555; /* Quote text color */
+    color: #555;
 }
 
 .feedback-card cite {
     font-style: normal;
     font-weight: bold;
-    color: #777; /* Cite text color */
+    color: #777;
 }
 
 .feedback-card cite:before {
     content: "- ";
 }
 
+/* Logo styles */
 #logo {
     position: absolute;
-    top: 1px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    width: 90px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    top: 1px;
+    left: 10px;
+    width: 90px;
+    height: auto;
 }
 
 /* Game and app page styles */
@@ -236,28 +252,31 @@ footer {
 .page a:hover {
     background-color: #0056b3;
 }
+
 /* Welcome section styles */
 .welcome-section {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #f9f9f9;
     padding: 40px;
     text-align: center;
 }
 
 .welcome-section h1 {
-    color: #333; /* Dark gray heading color */
+    color: #333;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .welcome-section p {
-    color: #666; /* Medium gray paragraph color */
+    color: #666;
     font-size: 18px;
     line-height: 1.6;
 }
-.collectionm  {
+
+/* Collection styles */
+.collectionm {
     display: inline-block;
     margin-bottom: 20px;
-     margin-right: 20px;
+    margin-right: 20px;
     width: 200px;
     height: 300px;
     overflow: hidden;
@@ -266,7 +285,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.collectionm  img {
+.collectionm img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -276,4 +295,19 @@ footer {
 .collection:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .container, .feedback-form, .past-feedback, .page, .welcome-section, .collectionm {
+        padding: 10px;
+    }
+    
+    .movie, .feedback-card, .collectionm {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    nav {
+        margin-top: 50px;
+    }
 }
