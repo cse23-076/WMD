@@ -10,7 +10,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         messageElement.style.color = 'red';
     } else {
         messageElement.textContent = 'Feedback received. Thank you!';
-        messageElement.style.color = 'black';
+        messageElement.style.color = 'red';
         // Optionally, clear the form fields
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
