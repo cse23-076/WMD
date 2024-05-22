@@ -78,28 +78,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-   document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var feedback = document.getElementById('feedback').value.trim();
-    var messageElement = document.getElementById('message');
 
-    if (name === '' || email === '' || feedback === '') {
-        messageElement.textContent = 'Please fill all boxes.';
-        messageElement.style.color = 'red';
-    } else {
-        messageElement.textContent = 'Feedback received. Thank you!';
-        messageElement.style.color = 'black';
-        // Optionally, clear the form fields
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('feedback').value = '';
-    }
-});
-
-</script>
+    <script src="feedback.js"></script>
+</body>
 
 
 <footer>
@@ -109,5 +90,4 @@
     <a href="https://www.warnerbros.com/"><img src="whatsapp.png" style="width: 50px; height: 50px;"></a>
     <a href="https://web.facebook.com/WarnerBrosPictures/?_rdc=1&_rdr"><img src="facebook.jpg" style="width: 50px; height: 50px;"></a>
 </footer>
-</body>
 </html>
