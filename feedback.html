@@ -59,29 +59,46 @@
         </div>
         <!-- Add more feedback cards as needed -->
     </section>
-    <section class="feedback-form">
-        <h2>We'd Love to Hear from You!</h2>
-        <p>Share your thoughts, suggestions, or any issues you encountered with us. Your feedback helps us improve!</p>
-        <form id="feedbackForm" action="#" method="post" onsubmit="showFeedbackMessage()">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="feedback">Your Feedback:</label>
-            <textarea id="feedback" name="feedback" rows="5" required></textarea>
-            <button type="submit">Submit Feedback</button>
-        </form>
-    </section>
+  <section class="feedback-form">
+    <h2>We'd Love to Hear from You!</h2>
+    <p>Share your thoughts, suggestions, or any issues you encountered with us. Your feedback helps us improve!</p>
+    <form id="feedbackForm" action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <p id="message"></p> <!-- This element will display feedback messages -->
+</section>
+
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    function showFeedbackMessage() {
-        alert("Feedback received. Thank you!");
-        document.getElementById("feedback").value = ""; // Clear the feedback textarea
-        return false; // Prevent form submission (page reload)
+   document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var feedback = document.getElementById('feedback').value.trim();
+    var messageElement = document.getElementById('message');
+
+    if (name === '' || email === '' || feedback === '') {
+        messageElement.textContent = 'Please fill all boxes.';
+        messageElement.style.color = 'red';
+    } else {
+        messageElement.textContent = 'Your Feedback Has Been Received.';
+        messageElement.style.color = 'green';
+        // Optionally, clear the form fields
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('feedback').value = '';
     }
+});
+
 </script>
 
 
