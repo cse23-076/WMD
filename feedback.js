@@ -1,38 +1,19 @@
-// Get the form element
-var feedbackForm = document.getElementById("feedbackForm");
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var feedback = document.getElementById('feedback').value.trim();
+    var messageElement = document.getElementById('message');
 
-// Add event listener for form submission
-feedbackForm.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    console.log("Form submitted!"); // Check if this message appears in the console
-    
-    // Display the modal
-    showModal();
+    if (name === '' || email === '' || feedback === '') {
+        messageElement.textContent = 'Please fill all boxes.';
+        messageElement.style.color = 'red';
+    } else {
+        messageElement.textContent = 'Feedback received. Thank you!';
+        messageElement.style.color = 'black';
+        // Optionally, clear the form fields
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('feedback').value = '';
+    }
 });
-
-// Function to display the modal
-function showModal() {
-    var modal = document.createElement("div");
-    modal.className = "modal";
-    modal.innerHTML = `
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Thank you for your feedback! We appreciate it.</p>
-        </div>
-    `;
-    document.body.appendChild(modal);
-
-    // Close modal when close button is clicked
-    var closeBtn = modal.querySelector(".close");
-    closeBtn.addEventListener("click", function() {
-        document.body.removeChild(modal);
-    });
-
-    // Close modal when clicking outside of it
-    window.addEventListener("click", function(event) {
-        if (event.target == modal) {
-            document.body.removeChild(modal);
-        }
-    });
-}
